@@ -1,0 +1,20 @@
+body{
+    height: 100%;
+}
+
+.modal-hid {
+   visibility: hidden;
+}
+
+.modal {
+    display: flex;
+    flex-flow: wrap row;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 0, 0, 1.0);
+    justify-content: center;
+}
+
+.modal_header {
+    flex-basis: 100%;
+    text-align: center;
+}
