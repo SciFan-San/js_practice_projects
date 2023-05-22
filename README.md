@@ -1,6 +1,6 @@
 # Welcome to my JS practice repo
 
-### Check out the Live Demo here: 
+### Check out the Live Demo here: https://scifan-san.github.io/js_practice_projects/
 
 Beware all who enter, ahead lies chaos and madness, a place devoid of raitonality and function!  
   
