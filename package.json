@@ -1,0 +1,12 @@
+{
+  "name": "js_practice_projects",
+  "version": "1.0.0",
+  "description": "### Check out the Live Demo here: https://scifan-san.github.io/js_practice_projects/",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

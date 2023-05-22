@@ -9,12 +9,12 @@ class Modal {
 
   //Function: Sets modal visible
   openModal(selectModal) {
-    this.selectModal.remove("modal-hid");
+    this.selectModal.remove("invisible");
   };
 
   //Function: Sets modal hidden
   closeModal(selectModal) {
-    this.selectModal.add("modal-hid");
+    this.selectModal.add("invisible");
   };
 };
 
