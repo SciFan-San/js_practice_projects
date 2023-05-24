@@ -7,18 +7,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./dist/output.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     </head>
-    <body>
-        <h1>Final Project</h1>
+    <body class="min-h-screen">
+        <h1 clss="final">Final Project</h1>
 
         <button class="open">Open Modal</button>
 
-        <div class="modal-container invisible">
-            <div class="modal">
-                <h1 class="modal_header">This is a modal</h1>
-                <button class="close">Close Modal</button>
+        <div class="modal-container invisible fixed shadow top-0 left-0 right-0 z-50 overflow-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm backdrop-saturate-200">
+            <div class="modal relative bg-white rounded-lg shadow dark:bg-gray-700 text-center w-full max-w-md max-h-full m-auto translate-y-1/2 overflow-hidden overflow-y-auto p-8 text-gray-400">
+                <h1 class="text-5xl font-sans p-4">This is a modal</h1>
+                <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eaque iusto consequuntur dolor voluptatum aut perspiciatis ullam laborum, vero dicta, molestiae repudiandae doloremque animi beatae temporibus possimus enim itaque, deleniti magnam dolores. Error, eligendi modi vel impedit quia sapiente saepe a, perspiciatis perferendis exercitationem ad nemo fugit labore aliquid blanditiis?</p>
+                <button class="close absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"><i class="fa-regular fa-circle-xmark text-lg text-red-500"></i></i></button>
             </div>
         </div>
 
