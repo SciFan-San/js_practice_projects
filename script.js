@@ -1,4 +1,4 @@
-//Modal Project Code
+//Modal Project - JS class method -> Edit CSS class
 const selectModal = document.querySelector(".modal-container").classList;
 
 class Modal {
@@ -25,7 +25,7 @@ let openButton = document.querySelector("button.open").addEventListener("click",
 let closeButton = document.querySelector("button.close").addEventListener("click", function() {
   myModal.closeModal(selectModal)});
 
-//Final Project Code - JS animation
+//Final Project - JS -> CSS animations
 const h1 = document.querySelector(".final");
 const h1Array = h1.innerText.split("");
 let letters = ""
@@ -35,3 +35,5 @@ h1Array.forEach(element => {
 });
 console.log(letters);
 h1.innerHTML = letters;
+
+//Calculator Project -> JS, CSS, HTML -> Simple Calculator
