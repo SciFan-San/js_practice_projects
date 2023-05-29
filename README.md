@@ -2,6 +2,8 @@
 
 ### Check out the Live Demo here: https://scifan-san.github.io/js_practice_projects/
 
+### New branch for pushed changes to be merged to master down the line.
+
 Beware all who enter, ahead lies chaos and madness, a place devoid of raitonality and function!  
   
 Dramatics aside, I welcome you to the place where I practice JavaScript. I made this repo for that primary reason, practice. The secondary reason is that by leveragin the power of git and GitHub my practice isn't bound to a single machine. Thirdly, for better or worse I've decided to make my foray into understanding and pushing the limits of JS open for all to see.  
