@@ -33,13 +33,6 @@ let letters = ""
 h1Array.forEach(element => {
     letters = letters + `<span class="js-animate">${element}</span>`;
 });
-<<<<<<< HEAD
-console.log(letters);
-h1.innerHTML = letters;
-
-//Calculator Project -> JS, CSS, HTML -> Simple Calculator
-=======
-h1.innerHTML = letters;
 
 //Calculator Project - JS operations
 class Calculate {
@@ -60,6 +53,7 @@ class Calculate {
 }
 
 const wordNumberArray = document.querySelectorAll(".calc-num-buttons");
-const numberArray = wordNumberArray;
+const numberArray = wordNumberArray.map(str => {
+    return +str;
+});
 const operators = document.querySelectorAll(".calc-op-buttons");
->>>>>>> ea850aa (added calculator project)
