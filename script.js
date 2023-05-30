@@ -31,7 +31,7 @@ const h1Array = h1.innerText.split("");
 let letters = ""
   
 h1Array.forEach(element => {
-    letters = letters + `<span class="js-animate">${element}</span>`;
+    letters = letters + `<span class="ease-in-out hover:rotate-12 hover:scale-150 hover:text-emerald-400">${element}</span>`;
 });
 
 //Calculator Project - JS operations
