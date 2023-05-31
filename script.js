@@ -52,8 +52,25 @@ class Calculate {
 
 }
 
-const wordNumberArray = document.querySelectorAll(".calc-num-buttons");
-const numberArray = wordNumberArray.map(str => {
-    return +str;
+let $calcDisplay = document.querySelector(".calc-screen");
+const $buttonPress = document.querySelectorAll(".calc-num-buttons, .calc-op-buttons");
+
+$buttonPress.forEach((node) => {
+  node.addEventListener("mousedown", function(e){
+    const value = node.innerText.trim();
+    const displayText = $calcDisplay.innerText.trim(); 
+   
+    if(value == "=") {
+      let solutionResult = eval(displayText);
+      $calcDisplay.innerText = solutionResult;
+      return true;
+    };
+
+    if(value.toLowerCase() == "c") {
+      $calcDisplay.innerText = "";
+      return true;
+    };
+
+    $calcDisplay.append(value);
+  });
 });
-const operators = document.querySelectorAll(".calc-op-buttons");
