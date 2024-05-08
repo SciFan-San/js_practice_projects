@@ -3,7 +3,7 @@ module.exports = {
   content: ["./*.{html, js}"],
   theme: {
     fontFamily:{
-      'custom':['"Terminus Regular"']
+      'custom':['Chakra Petch', 'sans-serif']
     },
     extend: {},
   },

@@ -33,7 +33,44 @@ let letters = ""
 h1Array.forEach(element => {
     letters = letters + `<span class="js-animate">${element}</span>`;
 });
-console.log(letters);
-h1.innerHTML = letters;
 
-//Calculator Project -> JS, CSS, HTML -> Simple Calculator
+//Calculator Project - JS operations
+class Calculate {
+  constructor() {
+
+  }
+  
+  //Operand logic
+  operandLogic () {
+    
+  }
+
+  //Update Calculator display
+  screenUpdate () {
+
+  }
+
+}
+
+let $calcDisplay = document.querySelector(".calc-screen");
+const $buttonPress = document.querySelectorAll(".calc-num-buttons, .calc-op-buttons");
+
+$buttonPress.forEach((node) => {
+  node.addEventListener("mousedown", function(e){
+    const value = node.innerText.trim();
+    const displayText = $calcDisplay.innerText.trim(); 
+   
+    if(value == "=") {
+      let solutionResult = eval(displayText);
+      $calcDisplay.innerText = solutionResult;
+      return true;
+    };
+
+    if(value.toLowerCase() == "c") {
+      $calcDisplay.innerText = "";
+      return true;
+    };
+
+    $calcDisplay.append(value);
+  });
+});
